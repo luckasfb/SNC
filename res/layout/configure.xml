@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <CheckBox
+        android:id="@+id/checkbox_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/hourformat" />
+
+    <LinearLayout
+        android:id="@+id/hline_01"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/checkbox_24"
+        android:background="@color/line_color" />
+
+    <CheckBox
+        android:id="@+id/checkbox_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hline_01"
+        android:text="@string/shadow" />
+
+    <LinearLayout
+        android:id="@+id/hline_02"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/checkbox_shadow"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/hline_02"
+        android:layout_marginTop="56dp"
+        android:gravity="center"
+        android:text="@string/hello" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/hline_02"
+        android:layout_marginTop="136dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/signature" />
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main_layout"
+	android:layout_width="294dp"
+	android:layout_height="72dp"
+	android:padding="3dp"
+	android:layout_gravity="center_vertical|center_horizontal"
+	android:gravity="top|center_horizontal">
+		
+	<TextView
+		style="@style/BigText41_Hour"
+		android:id="@+id/text_hours"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:shadowColor="@android:color/transparent"
+		android:gravity="right"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="-16dp"
+		android:text="09"
+		android:textColor="@android:color/white" />
+	
+	<TextView
+		style="@style/BigText41_Minute"
+		android:id="@+id/text_minutes"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="left"
+		android:layout_alignBaseline="@id/text_hours"
+		android:layout_toRightOf="@id/text_hours"
+		android:text="55"
+		android:textColor="@android:color/white"
+		android:layout_marginLeft="15dp"
+		android:shadowColor="@android:color/transparent" />
+	
+	<TextView
+		style="@style/SmallText41_AM"
+		android:id="@+id/text_am"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="left"
+		android:layout_below="@id/text_hours"	
+		android:layout_alignLeft="@id/text_hours"	
+		android:layout_marginTop="-12dp"
+		android:layout_marginLeft="2dp"
+		android:text="AM"
+		android:textColor="@android:color/white"
+		android:shadowColor="@android:color/transparent" />
+	
+	<TextView
+		style="@style/BigText2points"
+		android:id="@+id/text_2points"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="top|center_horizontal"
+		android:layout_toRightOf="@id/text_hours"
+		android:shadowColor="@android:color/transparent"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="-16dp"
+		android:text=":"
+		android:textColor="@android:color/white" />
+
+	<LinearLayout
+		android:id="@+id/v_line"
+		android:layout_toRightOf="@id/text_minutes"
+		android:layout_width="2dp"
+		android:layout_height="fill_parent"
+		android:background="@drawable/line_clean"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="7dp"
+		android:layout_marginBottom="0dp" />
+	
+	<LinearLayout
+		android:id="@+id/v_line1"
+		android:layout_toLeftOf="@id/text_hours"
+		android:layout_width="2dp"
+		android:layout_height="fill_parent"
+		android:background="@drawable/line_clean"
+		android:layout_marginRight="20dp"
+		android:layout_marginLeft="-10dp"
+		android:layout_marginBottom="0dp" />
+	
+	<TextView
+		style="@style/SmallText41_Day"
+		android:id="@+id/text_day"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@id/text_am"
+		android:layout_alignLeft="@id/text_2points"
+		android:gravity="center_vertical|right"
+		android:layout_marginLeft="-10dp"
+		android:text="Domenica, "
+		android:textColor="@android:color/white"
+		android:shadowColor="@android:color/transparent" />
+	<TextView
+		style="@style/SmallText41_Date"
+		android:id="@+id/text_date"
+		android:layout_toRightOf="@id/text_day"
+		android:layout_alignBaseline="@id/text_day"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical|left"
+		android:text="Gennaio 3"
+		android:textColor="@android:color/white"
+	    android:shadowColor="@android:color/transparent" />
+	
+</RelativeLayout>

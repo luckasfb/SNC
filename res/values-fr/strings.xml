@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="hello">Merci d avoir téléchargé Linear Simple Clock</string>
+    <string name="signature">PdroidAndroid</string>
+    <string name="configure_label">Configuration de Linear Simple Clock Widget</string>
+    <string name="app_name">Linear Simple Clock</string>
+    <string name="hourformat">Format 24h</string>
+    <string name="shadow">Afficher ombre</string>
+    <string name="save">Créer le widget</string>
+    <string name="label_4x2">Linear Simple Clock 4x2</string>
+    <string name="label_4x1">Linear Simple Clock 4x1</string>
+    </resources>

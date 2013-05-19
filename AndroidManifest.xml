@@ -1,0 +1,59 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pdroidandroid.simplenumericclock"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+        
+        <!-- Clock 4x2 -->
+		<activity android:name=".SimpleNumClockWidgetConfigure" android:theme="@style/Theme.Default" android:label="@string/configure_label">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+			</intent-filter>
+		</activity>
+
+		<service android:name=".service.ClockService" android:process=":remote">
+			<intent-filter>
+				<action android:name="com.pdroidandroid.simplenumericclock.service.ClockService" />
+      	</intent-filter>
+		</service>
+
+		<!-- Clock 4x1 -->
+		<activity android:name=".SimpleNumClockWidgetConfigure41" android:theme="@style/Theme.Default" android:label="@string/configure_label">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+			</intent-filter>
+		</activity>
+
+		<service android:name=".service.ClockService41" android:process=":remote">
+			<intent-filter>
+				<action android:name="com.pdroidandroid.simplenumericclock.service.ClockService41" />
+      	</intent-filter>
+		</service>
+
+		<receiver android:name=".ClockAppWidgetProvider" android:label="@string/label_4x2">
+			<intent-filter>
+				<action android:name="android.intent.action.TIME_TICK"></action>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE"></action>
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_info_42" />
+		</receiver>
+
+		<receiver android:name=".ClockAppWidgetProvider41" android:label="@string/label_4x1">
+			<intent-filter>
+				<action android:name="android.intent.action.TIME_TICK"></action>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE"></action>
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_info_41" />
+		</receiver>
+        
+    </application>
+
+</manifest>

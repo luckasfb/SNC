@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main_layout"
+	android:layout_width="294dp"
+	android:layout_height="146dp"
+	android:padding="0dp"
+	android:layout_gravity="left|center_vertical"
+	android:gravity="top|left">
+		
+	<TextView
+		style="@style/BigText42_Hour"
+		android:id="@+id/text_hours"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="right"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="-24dp"
+		android:text="09"
+		android:textColor="@android:color/white" />
+		
+	<TextView
+		style="@style/SmallText42_AM"
+		android:id="@+id/text_am"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="right"
+		android:layout_below="@id/text_hours"
+		android:layout_alignRight="@id/text_hours"
+		android:layout_marginTop="-16dp"
+		android:text="AM"
+		android:textColor="@android:color/white" />
+
+	<LinearLayout
+		android:id="@+id/v_line"
+		android:layout_toRightOf="@id/text_hours"
+		android:layout_width="4px"
+		android:layout_height="fill_parent"
+		android:background="@drawable/line"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginBottom="10dp" />
+
+	<TextView
+		style="@style/BigText42_Minute"
+		android:id="@+id/text_minutes"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@id/text_hours"
+		android:layout_toRightOf="@id/v_line"
+		android:gravity="left"
+		android:text="55"
+		android:textColor="@android:color/white" />
+
+	<TextView
+		style="@style/SmallText42_Day"
+		android:id="@+id/text_day"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@id/text_am"
+		android:layout_alignLeft="@id/text_minutes"
+		android:gravity="center_vertical|left"
+		android:text="Domenica, "
+		android:textColor="@android:color/white" />
+	<TextView
+		style="@style/SmallText42_Date"
+		android:id="@+id/text_date"
+		android:layout_toRightOf="@id/text_day"
+		android:layout_alignBaseline="@id/text_day"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical|left"
+		android:text="Gennaio 3"
+		android:textColor="@android:color/white" />
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+    
+	
+	<LinearLayout
+		android:layout_below="@id/checkbox_24"
+		android:id="@+id/hline_01"
+		android:layout_width="fill_parent"
+		android:layout_height="1px"
+		android:background="@android:color/background_light"
+	/>
+
+
+	<LinearLayout
+		android:layout_alignParentBottom="true"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center">
+		<Button
+			android:id="@+id/save_button"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/save" />
+	</LinearLayout>
+
+	<ToggleButton
+	    android:id="@+id/checkbox_24"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="30dp"
+	    android:layout_marginLeft="30dp"
+	    android:text="@string/hourformat" />
+
+	
+	
+	<CheckBox
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/checkbox_24"
+		android:text="@string/hourformat" />
+</RelativeLayout>
